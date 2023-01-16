@@ -1,0 +1,62 @@
+/* FS + LH */
+p {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: var(--clr-font-secondary);
+  }
+  
+  @media (max-width: 375px) {
+    p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    }
+    
+  
+  }
+  
+  .heading-m {
+    font-size: var(--fs-h-m);
+    line-height: var(--lh-h-m);
+    letter-spacing: var(--ls-h-m);
+    font-family: var(--ff-bold);
+  }
+  
+  .heading-l {
+    font-size: var(--fs-h-l);
+    line-height: var(--lh-h-l);
+    letter-spacing: var(--ls-h-l);
+    font-family: var(--ff-bold);
+  }
+  
+  .heading-xl {
+    font-size: var(--fs-h-xl);
+    line-height: var(--lh-h-xl);
+    letter-spacing: var(--ls-h-xl);
+    font-family: var(--ff-bold);
+  }
+
+
+
+  @media (max-width: 768px) {
+    .heading-xl {
+      font-size: calc(var(--fs-h-xl) - 1rem);
+      line-height: calc(var(--lh-h-xl) - 1rem);
+      letter-spacing: calc(var(--ls-h-xl) - 0.0279rem);
+    }   
+  }
+  
+  @media (max-width: 600px) {
+    .heading-xl {
+      font-size: calc(var(--fs-h-xl) - 2rem);
+      line-height: calc(var(--lh-h-xl) - 1.5rem);
+      letter-spacing: calc(var(--ls-h-xl) - 0.0279rem);
+    } 
+  }
+
+  @media (max-width: 410px) {
+    .heading-xl {
+      font-size: calc(var(--fs-h-xl) - 2.5rem);
+      line-height: calc(var(--lh-h-xl) - 2.5rem);
+      letter-spacing: calc(var(--ls-h-xl) - 0.084rem);
+    }   
+  }
